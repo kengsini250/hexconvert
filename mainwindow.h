@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QRegularExpression>
 #include <QValidator>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,7 +20,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QString temp;
 
+    QTimer* timer2,*timer8,*timer10,*timer16;
     bool flag2 = false;
     bool flag8 = false;
     bool flag10 = false;
