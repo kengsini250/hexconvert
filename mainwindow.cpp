@@ -120,11 +120,11 @@ MainWindow::MainWindow(QWidget *parent)
         if (!flag2 && !flag8 && !flag10) {
             QString t2 = QString::number(text.toInt(&end, 16), 2);
             QString t8 = QString::number(text.toInt(&end, 16), 8);
-            QString t10 = QString::number(text.toInt(&end, 16), 16);
+            QString t10 = QString::number(text.toInt(&end, 16), 10);
 
             ui->lineEdit2->setText(t2);
             ui->lineEdit8->setText(t8);
-            ui->lineEdit16->setText(t10);
+            ui->lineEdit10->setText(t10);
 
             ui->textEdit->append(text + "     " + t2 + "     " + t8 + "     " + t10);
         }
